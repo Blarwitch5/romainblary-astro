@@ -1,5 +1,5 @@
 ---
-import Header from "../components/Header.astro";
+import Header from "../components/header/Header.astro";
 import Footer from "../components/Footer.astro";
 
 import "../styles/styles.scss";
@@ -49,44 +49,6 @@ const { title, descritpion } = Astro.props;
     <Footer />
 
     <style is:global lang="scss">
-      :root {
-        --color-bg: #121212;
-        --color-text: #dddddd;
-        --bold-text: #eeeeee;
-        --nav-text: #dddddd;
-        --code: #f2f2f2;
-
-        --slider-bg: #dddddd;
-        --slider-bg-before: #fff;
-
-        --accent-color: #ffafbd;
-        --accent-color-alt: #ffc3a0;
-      }
-
-      [data-theme="light"] {
-        --color-bg: #f2f2f2;
-        --color-text: #444444;
-        --bold-text: #222;
-        --nav-text: #000000;
-        --code: #f2f2f2;
-        --slider-bg: #dddddd;
-        --slider-bg-before: #fff;
-
-        --accent-color: #cc2b5e;
-        --accent-color-alt: #753a88;
-      }
-
-      [data-theme="dark"] {
-        --color-bg: #121212;
-        --color-text: #dddddd;
-        --bold-text: #eeeeee;
-        --nav-text: #dddddd;
-        --code: #f2f2f2;
-
-        --accent-color: #ffafbd;
-        --accent-color-alt: #ffc3a0;
-      }
-
       html {
         font-family: "Work Sans", sans-serif;
         font-size: 16px;
