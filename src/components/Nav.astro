@@ -1,0 +1,40 @@
+---
+import HeaderNavLink from "./HeaderNavLink.astro";
+import ToggleBtn from "./ToggleBtn.astro";
+---
+
+<nav class="navbar">
+  <ul class="navbar__list">
+    <li class="navbar__list-item"><HeaderNavLink href="/#resume" txt="Resume" /></li>
+    <li class="navbar__list-item"><HeaderNavLink href="/#skills" txt="Skills" /></li>
+    <li class="navbar__list-item"><HeaderNavLink href="/#projects" txt="Projects" /></li>
+    <li class="navbar__list-item"><HeaderNavLink href="/#contact" txt="Contact" /></li>
+    <!-- <li class="navbar__list-item"><HeaderNavLink href="/sport-life" txt="Sport Life" /></li> -->
+  </ul>
+</nav>
+<ToggleBtn />
+
+<style scoped lang="scss">
+  .navbar {
+    &__list {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: nowrap;
+      li {
+        padding-inline: 0.5rem;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+
+      li {
+        padding: 1rem;
+      }
+    }
+  }
+</style>

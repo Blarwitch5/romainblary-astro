@@ -1,0 +1,32 @@
+---
+// import { SITE_TITLE } from "../config";
+import Brand from "./Brand.astro";
+import Toggle from "./ThemeSwitcher.astro";
+import Nav from "./Nav.astro";
+---
+
+<header class="header">
+  <div class="container header__wrapper">
+    <Brand imgTitle="Logo Romain Blary" imgSrc="/public/images/logo.svg" imgAlt="Logo Romain Blary" name="Blary" firstName="Romain" role="WebDev" />
+    <Toggle />
+    <Nav />
+  </div>
+</header>
+
+<style scoped lang="scss">
+  .header {
+    // position: sticky;
+    // top: 0;
+    // z-index: 9;
+    // background-color: var(--color-bg);
+    max-height: 100px;
+    padding-block: 1rem;
+    margin-bottom: 2rem;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+  }
+</style>

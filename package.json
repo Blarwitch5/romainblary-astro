@@ -1,0 +1,23 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev node-sass -w assets/styles/scss/ -o assets/styles/css/ --recursive",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^1.6.0",
+    "autoprefixer": "^10.4.13",
+    "rellax": "^1.12.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.6.0",
+    "sass": "^1.55.0"
+  }
+}

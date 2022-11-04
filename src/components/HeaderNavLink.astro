@@ -1,0 +1,23 @@
+---
+export interface Props {
+  href: string;
+  txt: string;
+}
+
+const { href, txt } = Astro.props;
+---
+
+<a class="navbar__link" href={href}>{txt}</a>
+
+<style scoped lang="scss">
+  .navbar__link {
+    color: var(--color-text);
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--color-text);
+    }
+  }
+</style>

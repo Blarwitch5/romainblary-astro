@@ -1,0 +1,61 @@
+---
+---
+
+<section class="hero">
+  <div class="hero__img">
+    <img src="/images/romain-blary.jpg" alt="Romain Blary staring at the volcano in Bali" />
+  </div>
+  <h1 class="hero__title1 rellax" data-rellax-speed="1">Romain <span>Blary</span></h1>
+  <h2 class="hero__title2 rellax" data-rellax-speed="1">Web Developper</h2>
+</section>
+
+<style scoped lang="scss">
+  .hero {
+    position: relative;
+    height: calc(100vh - 100px);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      height: 70%;
+      border-radius: 10px;
+      z-index: 0;
+      object-fit: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__title1 {
+      z-index: 1;
+      font-size: 7rem;
+      font-weight: 800;
+      margin: 0;
+      line-height: 1;
+
+      span {
+        opacity: 0.5;
+      }
+    }
+    &__title2 {
+      z-index: 1;
+      font-size: 4rem;
+      font-weight: 200;
+      line-height: 1;
+    }
+  }
+</style>

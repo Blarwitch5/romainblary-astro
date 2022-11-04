@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<Layout title="Romain Blary - Web developer" description="Description home page">
+  <main>
+    <div class="container">
+      <Hero />
+      <section id="about" style="height:100vh;"><h3>About</h3></section>
+      <section id="resume" style="height:100vh;">Resume</section>
+      <section id="projects" style="height:100vh;">Projects</section>
+      <section id="contact" style="height:100vh;">Contact</section>
+      <!-- <Card href="https://astro.build/chat/" title="Community" body="Come say hi to our amazing Discord community. ❤️" /> -->
+    </div>
+  </main>
+</Layout>
+
+<style lang="scss">
+  main {
+    margin: auto;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+</style>
+
+<script>
+  import Rellax from "../js/vendor/rellax.min.js";
+  new Rellax(".rellax");
+</script>

@@ -1,0 +1,38 @@
+/**
+ * Containers
+ */
+.container {
+    max-width: calc(var(--sm) - 2rem);
+    margin: 0 auto;
+    padding-inline: 1rem;
+}
+@media only screen and (min-width: 576px) {
+    .container {
+        max-width: calc(var(--md) - 5%);
+        padding-inline: 1rem;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: calc(var(--lg) - 5%);
+        padding-inline: 2rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: calc(var(--xl) - 10%);
+        padding-inline: 3rem;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: calc(var(--xxl) - 15%);
+        padding-inline: 4rem;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: calc(var(--xxl) - 15%);
+        padding-inline: 5rem;
+    }
+}

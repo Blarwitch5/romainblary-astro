@@ -1,0 +1,33 @@
+---
+---
+
+<footer class="footer">
+  <p class="footer__copyright">
+    ©<span id="year"></span>
+    <span class="footer__sitename">Romain Blary</span> - Tous droits réservés
+  </p>
+</footer>
+<style scoped lang="scss">
+  .footer {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 4rem;
+
+    &__copyright {
+      font-weight: 300;
+      color: var(--color-text);
+    }
+    &__sitename {
+      font-weight: 700;
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+      color: var(--bold-text);
+    }
+  }
+</style>
+<script scoped>
+  document.getElementById("year").innerHTML = parseFloat(new Date().getFullYear());
+</script>
